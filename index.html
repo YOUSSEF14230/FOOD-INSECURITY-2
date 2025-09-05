@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Insecurity</title>
-<link rel="stylesheet" href="style.css">
-
-       
+    <link rel="stylesheet" href="style.css" />
+  
 </head>
 <body>
 
@@ -15,38 +14,59 @@
 </header>
 
 <section>
-    <h2>What is Food Insecurity?</h2>
-    <p>Food insecurity is the state of being without reliable access to a sufficient quantity of affordable, nutritious food. It affects millions of people around the world and can lead to serious health, social, and economic consequences.</p>
-
-    <div class="image-container">
-        
-        <p><small></small></p>
+    <button class="accordion">What is Food Insecurity?</button>
+    <div class="accordion-content">
+        <p>Food insecurity is the state of being without reliable access to a sufficient quantity of affordable, nutritious food. It affects millions of people around the world and can lead to serious health, social, and economic consequences.</p>
     </div>
 
-    <h2>Causes of Food Insecurity</h2>
-    <ul>
-        <li>Poverty and unemployment</li>
-        <li>Natural disasters and climate change</li>
-        <li>Conflict and displacement</li>
-        <li>Rising food prices</li>
-        <li>Inequitable food systems</li>
-    </ul>
+    <button class="accordion">Causes of Food Insecurity</button>
+    <div class="accordion-content">
+        <ul>
+            <li>Poverty and unemployment</li>
+            <li>Natural disasters and climate change</li>
+            <li>Conflict and displacement</li>
+            <li>Rising food prices</li>
+            <li>Inequitable food systems</li>
+        </ul>
+    </div>
 
-    <h2>Impact on Communities</h2>
-    <p>Food insecurity can lead to malnutrition, poor academic performance in children, mental health issues, and chronic illnesses. It also deepens existing inequalities within communities.</p>
+    <button class="accordion">Impact on Communities</button>
+    <div class="accordion-content">
+        <p>Food insecurity can lead to malnutrition, poor academic performance in children, mental health issues, and chronic illnesses. It also deepens existing inequalities within communities.</p>
+    </div>
 
-    <h2>How You Can Help?</h2>
-    <ul>
-        <li>Donate to or volunteer at local food banks</li>
-        <li>Support policies that reduce poverty and hunger</li>
-        <li>Reduce food waste</li>
-        <li>Educate others about the issue</li>
-        <li>Support local food banks</li>
-    </ul>
-    <h1>By Youssef Mohamed Maher</h1>
+    <button class="accordion">How You Can Help?</button>
+    <div class="accordion-content">
+        <ul>
+            <li>Donate to or volunteer at local food banks</li>
+            <li>Support policies that reduce poverty and hunger</li>
+            <li>Reduce food waste</li>
+            <li>Educate others about the issue</li>
+            <li>Support local food banks</li>
+        </ul>
+    </div>
+    <h3>By Youssef Mohamed Maher</h3>
     <footer>
-        <p> Thanks For Reading</p>
+        <p>Thanks For Reading</p>
     </footer>
 </section>
+
+<script>
+    // Accordion functionality
+    var accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(function(accordion) {
+        accordion.addEventListener('click', function() {
+            this.classList.toggle('active');
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

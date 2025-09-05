@@ -1,34 +1,114 @@
- body {
+
+        /* Basic Body Styling */
+        body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #537470;
         }
+
         header {
-            background-color: #3e8e41;
-            color: white;
-            padding: 20px;
+            background-color: #28dc5e;
+            color: #faf7f7;
+            padding: 15px;
             text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+        }
+
         section {
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 20px;
+            padding: 20px;
+            background-color: #1ae453;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
-        h2 {
-            color: #3e8e41;
+
+      
+        /* Accordion Styling */
+        .accordion {
+            background-color: #d5cb68;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: 0.3s;
         }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
+
+        .accordion:hover {
+            background-color: #0056b3;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+
+        .active, .accordion:active {
+            background-color: #0056b3;
         }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: #777;
+
+        .accordion-content {
+            padding: 10px;
+            display: none;
+            background-color: #e18888;
+            border-left: 3px solid #007BFF;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .accordion-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .accordion-content p {
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            section {
+                padding: 15px;
+                margin: 10px;
+            }
         }
    
+        /* Accordion Styles */
+        .accordion {
+            background-color: #f780a6;
+            color: #444;
+            cursor: pointer;
+            padding: 10px 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+    
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+    
+        .accordion-content {
+            padding: 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-left: 3px solid #f1f1f1;
+            border-radius: 5px;
+        }
+        
+        
