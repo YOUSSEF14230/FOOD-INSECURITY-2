@@ -8,7 +8,8 @@
   
 </head>
 <body>
-
+<script src="plugin.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
 <header>
     <h1>Understanding Food Insecurity</h1>
 </header>
@@ -50,10 +51,8 @@
         <p>Thanks For Reading</p>
     </footer>
 </section>
-
 <script>
-    // Accordion functionality
-    var accordions = document.querySelectorAll('.accordion');
+var accordions = document.querySelectorAll('.accordion');
 
     accordions.forEach(function(accordion) {
         accordion.addEventListener('click', function() {
@@ -65,8 +64,6 @@
                 content.style.display = "block";
             }
         });
-    });
-</script>
-
+    });</script>
 </body>
 </html>
